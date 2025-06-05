@@ -1,0 +1,1 @@
+const apps = document.querySelectorAll(".app");

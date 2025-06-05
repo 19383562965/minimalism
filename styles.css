@@ -1,0 +1,154 @@
+body {
+  background-color: rgb(248, 246, 245);
+  color: rgb(78, 78, 78);
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+h2 {
+  font-size: 40px;
+  width: 100%;
+}
+h2 span {
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+h2 span:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+h3 {
+  font-size: 20px;
+  margin: 0;
+  text-align: center;
+  transition: 2s;
+}
+#top-menu {
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(231, 229, 228, 0.712);
+  backdrop-filter: blur(5px);
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  position: fixed;
+  padding: 0 20px;
+  align-items: center;
+}
+.website-name {
+  color: rgb(78, 78, 78);
+  font-size: 30px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.15s;
+}
+.website-name:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+a {
+  text-decoration: none;
+}
+#log-in-btn {
+  color: rgb(122, 122, 122);
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 30px;
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: 0.15s;
+  border: none;
+  cursor: pointer;
+}
+#log-in-btn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+#content {
+  margin-top: 8vh;
+  width: 96%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0 2%;
+  flex-wrap: wrap;
+  left: 0;
+}
+.containers {
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+}
+.app {
+  background-color: rgb(231, 229, 228);
+  width: 170px;
+  height: 200px;
+  border-radius: 30px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+  transition: 0.1s;
+  margin-bottom: 20px;
+}
+.app img {
+  margin: 10px;
+  background-color: rgb(255, 255, 255);
+  width: 150px;
+  height: 150px;
+  border-radius: 30px;
+  object-fit: cover;
+  transition: 0.15s;
+  transition: 1s;
+}
+.app:hover {
+  transform: scale(1.05);
+  background-color: rgb(235, 235, 235);
+  margin-bottom: 0px;
+  height: 220px;
+}
+.app:hover img {
+  transform: rotate(20deg);
+  animation-name: imgRotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+@keyframes imgRotate {
+  0% {transform: rotate(20deg);}
+  20% {transform: rotate(0deg);}
+  50% {transform: rotate(-20deg);}
+  75% {transform: rotate(0deg);}
+  100% {transform: rotate(20deg);}
+}
+#app-information {
+  top: 11.5vh;
+  right: 1.5%;
+  position: fixed;
+  display: flex;
+  height: 80vh;
+  width: 40%;
+  background-color: rgb(231, 229, 228);
+  padding: 20px;
+  border-radius: 30px;
+  align-items: start;
+  flex-wrap: wrap;
+}
+#app-information h1 {
+  font-size: 10.4vh;
+  margin-top: 0;
+  margin-left: 1%;
+}
+#app-information img {
+  width: 200px;
+}
+#app-information img, iframe {
+  width: 30%;
+  aspect-ratio: 1/2;
+  border-radius: 20px;
+  margin-left: 3.3%;
+  background-color: black;
+}
